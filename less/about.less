@@ -1,0 +1,152 @@
+// General Styles
+@phone: ~"(max-width: 500px)";
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+      background-color: #90949c;
+      margin: 0 auto;
+  }
+  
+  html, body {
+    font-family: 'Rubik', sans-serif;
+    color: #ecebe7;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'Lobster', cursive;
+    color: #ecebe7;
+  }
+
+  h1 {
+      font-size: 5rem;
+  }
+  
+  h2 {
+    font-size: 4rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+
+    @media @phone {
+        font-size: 2rem;
+    }
+  }
+
+  // Styling start
+
+  nav {
+    background-color: #6e7e87;
+    text-align: center;
+    padding: 30px;
+
+    a {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #ecebe7;
+        text-decoration: none;
+        font-size: 2.5rem;
+        
+        @media @phone {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    h1, p {
+        text-align: center;
+    }
+
+    @media @phone {
+
+    }
+}
+
+.stuffbox {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 20px;
+
+    @media @phone {
+        flex-wrap: wrap;
+    }
+
+    .leftside, .rightside {
+        flex-direction: column;
+        align-items: center;
+        width: 35%;
+        height: auto;
+
+        @media @phone {
+            width: 100%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    }
+}
+
+.meet {
+    display: flex;
+    justify-content: center;
+}
+
+.crew {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+    @media @phone {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftcolumn, .rightcolumn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media @phone {
+            width: 100%;
+        }
+    }
+    img {
+        max-width: 400px;
+        height: auto;
+
+        @media @phone {
+            max-width: 200px;
+        }
+    }
+}

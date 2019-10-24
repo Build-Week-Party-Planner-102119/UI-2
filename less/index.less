@@ -1,0 +1,175 @@
+// General Styles
+@phone: ~"(max-width: 500px)";
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+      background-color: #90949c;
+      margin: auto;
+  }
+  
+  html, body {
+    font-family: 'Rubik', sans-serif;
+    color: #ecebe7;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'Lobster', cursive;
+    color: #ecebe7;
+  }
+
+  h1 {
+      font-size: 5rem;
+  }
+  
+  h2 {
+    font-size: 4rem;
+  }
+  
+  h3 {
+    font-size: 2.8rem;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  
+  // Styling start
+
+  nav {
+      background-color: #6e7e87;
+      text-align: center;
+      padding: 30px;
+
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+      a {
+          padding-left: 10px;
+          padding-right: 10px;
+          color: #ecebe7;
+          text-decoration: none;
+          font-size: 2.5rem;
+
+          @media @phone {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+      }
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+
+    @media @phone {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div {
+        width: 100%;
+        text-align: center;
+    }
+
+    button {
+        color: #ecebe7;
+        border: 2px solid #ecebe7;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 2rem;
+        font-family: 'Rubik', sans-serif;
+        background-color: #90949c;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 20px;
+    }
+  }
+
+  .contentOne {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      margin-left: 5%;
+      margin-right: 5%;
+
+      @media @phone {
+          flex-direction: column-reverse;
+          align-items: center;
+      }
+
+    div {
+        width: 48%;
+
+        h2 {
+            @media @phone {
+                text-align: center;
+            }
+        }
+
+        @media @phone {
+            width: 100%;
+        }
+    }
+
+    img {
+        width: 100%;
+        border-radius: 20px;
+    }
+  }
+
+  .contentTwo {
+      display: flex;
+      flex-wrap: nowrap;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 30px;
+
+      div {
+          width: 33%;
+          padding-left: 1%;
+          padding-right: 1%;
+
+          @media @phone {
+              width: 100%;
+          }
+      }
+
+      @media @phone {
+          flex-direction: column;
+          align-items: center;
+      }
+  }
+
+  .left, .middle, .right {
+      h2 {
+          text-align: center;
+      }
+  }
+
+  .bottombutton {
+    display: flex;
+    justify-content: center;
+  button {
+    color: #ecebe7;
+    border: 2px solid #ecebe7;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    background-color: #90949c;
+  }
+}
